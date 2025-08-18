@@ -1,0 +1,22 @@
+{
+  "name": "discord-ticket-bot",
+  "version": "1.0.0",
+  "description": "Sistema avançado de tickets para Discord com suporte a logs, transcripts e gerenciamento via botões.",
+  "main": "ticket.js",
+  "scripts": {
+    "start": "node ticket.js",
+    "dev": "nodemon ticket.js"
+  },
+  "author": "Seu Nome",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.0",
+    "discord-html-transcripts": "^3.2.0",
+    "discord.js": "^14.14.1",
+    "form-data": "^4.0.0",
+    "mongoose": "^7.6.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
