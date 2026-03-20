@@ -1,42 +1,65 @@
-# 🎫 Discord Ticket Bot
+# Discord Ticket Bot
 
-Um **sistema avançado de tickets para Discord** com logs, transcripts em HTML e botões interativos para gerenciamento de atendimentos.
+Standalone Discord ticket bot built with `discord.js`, role-based permissions, and transcript logging.
 
-## 🚀 Tecnologias Utilizadas
+## Highlights
+
+- Slash command to publish a ticket panel
+- Ticket creation with category-based routing
+- Duplicate ticket protection per user
+- Close button with transcript export
+- Log channel support for operational visibility
+
+## Stack
+
 - Node.js
 - discord.js v14
 - discord-html-transcripts
-- axios + form-data
-- mongoose (MongoDB)
-- nodemon (dev)
+- dotenv
 
-## 📥 Instalação
+## Setup
+
+1. Install dependencies:
+
 ```bash
-git clone https://github.com/SEU_USUARIO/discord-ticket-bot.git
-cd discord-ticket-bot
 npm install
 ```
 
-## ⚙️ Configuração
-Crie um arquivo `.env`:
-```env
-DISCORD_TOKEN=seu_token_aqui
-MONGODB_URI=sua_string_de_conexao
-```
+2. Create `.env` from the example file and add your Discord bot token.
 
-Edite o `logChannels.json` com IDs do seu servidor.
+3. Update `logChannels.json` with your server role, categories, and log channel IDs.
 
-## ▶️ Execução
+## Run locally
+
 ```bash
-npm start   # produção
-npm run dev # desenvolvimento
+npm start
 ```
 
-## 📑 Inicialização
-Use no Discord:
-```
-/ticket canal_ticket:#canal
+Development mode:
+
+```bash
+npm run dev
 ```
 
----
-👨‍💻 Desenvolvido com ❤️ para servidores Discord
+## Slash command
+
+After the bot is online, use:
+
+```text
+/ticket-panel channel:#support-panel
+```
+
+That command posts the ticket selector inside the chosen text channel.
+
+## Configuration notes
+
+- `cargoticket`: support team role that can access tickets
+- `canallogsticket`: channel that receives transcript logs
+- `categoria_suporte`: category for support tickets
+- `categoria_denuncias`: category for report tickets
+- `categoria_solicitarpremiacao`: category for billing or payout tickets
+- `cor`: embed accent color
+
+## Author
+
+Douglas Aparecido Silva
