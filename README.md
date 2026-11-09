@@ -62,4 +62,4 @@ That command posts the ticket selector inside the chosen text channel.
 
 ## Author
 
-Douglas Aparecido Silva
+Becker
