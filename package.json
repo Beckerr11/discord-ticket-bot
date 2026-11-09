@@ -8,7 +8,7 @@
     "start": "node ticket.js",
     "dev": "nodemon ticket.js"
   },
-  "author": "Douglas Aparecido Silva",
+  "author": "Becker",
   "license": "MIT",
   "engines": {
     "node": ">=20.0.0"
